@@ -1,4 +1,7 @@
 # Introduction.
+This is a repository to practice some code snippets.
+
+# Docker
 There are two services.
 - Nginx in webserver container
 - Php in php container via php-fpm on port 9000
