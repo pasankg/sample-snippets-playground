@@ -4,10 +4,10 @@
  */
 
 namespace App;
-use SocialMediaFactory;
+use App\src\SocialMediaFactory;
+use Exception;
 
 // Create autoloader.
-
 require_once 'autoloader.php';
 spl_autoload_register('autoloader');
 
@@ -15,7 +15,7 @@ spl_autoload_register('autoloader');
 try {
   $login = SocialMediaFactory::getLogin('facebook');
   $login->createLogin();
-} catch (\Exception $e) {
+} catch (Exception $e) {
   print_r('<pre>'. 'Error: ' . $e .'</pre>');
 }
 

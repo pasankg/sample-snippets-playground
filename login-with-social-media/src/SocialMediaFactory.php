@@ -1,21 +1,27 @@
 <?php
+
+namespace App\src;
+
 /**
  * This is Social Media Factory Generator.
  */
 class SocialMediaFactory {
+
   const FACEBOOK = 'facebook';
+
   const GOOGLE = 'google';
 
   /**
    * Declaring private constructor to avoid instantiation.
    */
-  private function __construct() {}
+  private function __construct() {
+  }
 
   /**
    * @param string $socialMedia
    *  Social media type.
    *
-   * @return \Facebook|\Google
+   * @return \App\src\Facebook|\App\src\Google
    *  Return Social media object.
    *
    * @throws \Exception
