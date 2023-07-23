@@ -1,14 +1,14 @@
 <?php
-
-namespace App\src;
-
 /**
- * App\src\Facebook service.
+ * Facebook service.
  */
+
+namespace LoginWithSocialMedia;
+
 class Facebook implements ISocialMediaInterface {
 
-  public static function createLogin() {
-    // App\src\Facebook's integration code goes here.
+  public static function createLogin(): void {
+    // Facebook's integration code goes here.
     echo 'facebook';
   }
 }

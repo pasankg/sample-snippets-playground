@@ -3,19 +3,15 @@
  * Entry file to request a social login request.
  */
 
-namespace App;
-use LoginWithSocialMedia\SocialMediaFactory;
+namespace LoginWithSocialMedia;
 use Exception;
-
-// Create autoloader.
-require_once 'autoloader.php';
-spl_autoload_register('autoloader');
+require '../vendor/autoload.php';
 
 // Try to create a login request.
 try {
   $login = SocialMediaFactory::getLogin('facebook');
   $login->createLogin();
 } catch (Exception $e) {
-  print_r('<pre>'. 'Error: ' . $e .'</pre>');
+  print_r('<pre> Error: ' . $e .'</pre>');
 }
 

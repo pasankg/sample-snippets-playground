@@ -1,0 +1,17 @@
+{
+    "name": "sample-snippets/login-with-social-media",
+    "description": "Snippet to login with social media.",
+    "type": "project",
+    "license": "GPL2+",
+    "autoload": {
+        "psr-4": {
+            "LoginWithSocialMedia\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pasan Gamage"
+        }
+    ],
+    "require": {}
+}
