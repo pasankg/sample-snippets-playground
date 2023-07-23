@@ -2,26 +2,31 @@
 /**
  * This is Social Media Factory Generator.
  */
+
+namespace LoginWithSocialMedia;
+
 class SocialMediaFactory {
+
   const FACEBOOK = 'facebook';
+
   const GOOGLE = 'google';
 
   /**
    * Declaring private constructor to avoid instantiation.
    */
-  private function __construct() {}
+  private function __construct() {
+  }
 
   /**
    * @param string $socialMedia
    *  Social media type.
    *
-   * @return \Facebook|\Google
+   * @return \LoginWithSocialMedia\Facebook|\LoginWithSocialMedia\Google
    *  Return Social media object.
    *
-   * @throws \Exception
-   *  Throw an error if not found.
+   * @throws \Exception Throw an error if not found.
    */
-  public static function getLogin($socialMedia) {
+  public static function getLogin(string $socialMedia): Facebook|Google {
     return match ($socialMedia) {
       static::FACEBOOK => new Facebook(),
       static::GOOGLE => new Google(),
