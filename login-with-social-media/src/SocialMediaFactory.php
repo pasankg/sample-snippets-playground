@@ -26,7 +26,7 @@ class SocialMediaFactory {
    *
    * @throws \Exception Throw an error if not found.
    */
-  public static function getLogin(string $socialMedia): Facebook|Google {
+  public static function getLogin(string $socialMedia): Facebook|Google|\Exception {
     return match ($socialMedia) {
       static::FACEBOOK => new Facebook(),
       static::GOOGLE => new Google(),

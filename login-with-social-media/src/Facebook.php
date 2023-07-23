@@ -7,8 +7,8 @@ namespace LoginWithSocialMedia;
 
 class Facebook implements ISocialMediaInterface {
 
-  public static function createLogin(): void {
+  public static function createLogin(): string {
     // Facebook's integration code goes here.
-    echo 'facebook';
+    return 'facebook';
   }
 }

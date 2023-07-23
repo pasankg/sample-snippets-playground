@@ -7,8 +7,8 @@ namespace LoginWithSocialMedia;
 
 class Google implements ISocialMediaInterface {
 
-  public static function createLogin(): void {
+  public static function createLogin(): string {
     // Google's integration code goes here.
-    echo 'google';
+    return 'google';
   }
 }
